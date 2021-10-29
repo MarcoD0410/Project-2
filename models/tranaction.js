@@ -1,4 +1,4 @@
-const transac = [
+const transaction = [
     { 
         amount: 1310,
         date: 10/14/2019,
@@ -28,4 +28,4 @@ const transac = [
 
 ]
 
-module.exports = transac
+module.exports = transaction

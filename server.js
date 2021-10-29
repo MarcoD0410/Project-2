@@ -1,7 +1,7 @@
 // import deps
 const express = require("express")
 const app = require("liquid-express-views")(express())
-const transac = require("./models/tranaction")
+const transactions = require("./models/tranaction")
 
 
 app.use(express.static("public"))
@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/transaction", (req, res) => {
-    res.render("index.liquid"), {transac}
+    res.render("index.liquid"), {transactions}
 })
 
 

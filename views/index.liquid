@@ -9,12 +9,12 @@
 <body>
     <h1>Hello there</h1>
     <table>
-        {% for transac in transactions %}
+        {% for transaction in transactions %}
 
           <tr>
-            <td>{{transac.date}}</td>
-            <td><a href="/transaction/{{forloop.index0}}">{{transac.amount}}</a></td>
-            <td>{{transac.where}}</td>
+            <td>{{transaction.date}}</td>
+            <td><a href="/transaction/{{forloop.index0}}">{{transaction.amount}}</a></td>
+            <td>{{transaction.where}}</td>
           </tr>
 
 
