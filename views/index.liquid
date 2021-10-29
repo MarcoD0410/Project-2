@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/skeleton.css">
+</head>
+<body>
+    <h1>Hello there</h1>
+    <table>
+        {% for transac in transactions %}
+
+          <tr>
+            <td>{{transac.date}}</td>
+            <td><a href="/transaction/{{forloop.index0}}">{{transac.amount}}</a></td>
+            <td>{{transac.where}}</td>
+          </tr>
+
+
+         {% endfor %}
+      </table>
+    
+</body>
+</html>

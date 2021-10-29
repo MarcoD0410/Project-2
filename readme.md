@@ -15,13 +15,13 @@ List your routes in a table
 
 | url | method | action |
 |-----|--------|--------|
-|/save|  GET   | show all transactions|
-|/save/id| GET | get a particular transaction|
-|/save/new|GET| display a form|
-|/save| POST   | add something to index page then redirect|
-|/save/id|PUT  |Update a particular transaction then redirect|
-|/save/id|DELETE| delete a transaction the redirect|
-|     |        |        |
+|/transaction|  GET   | show all transactions|
+|/transaction/id| GET | get a particular transaction|
+|/transaction/new|GET| display a form|
+|/transaction| POST   | add something to index page then redirect|
+|/transaction/id|PUT  |Update a particular transaction then redirect|
+|/transactionid|DELETE| delete a transaction then redirect|
+
 
 ## User Stories
     User can visit /save to see all their transactions
