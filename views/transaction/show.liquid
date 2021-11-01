@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav> 
+        <a href="/transaction"><div>Home</div></a>
+        <a href="/transaction/new"><div>New Transaction</div></a>
+    </nav>
+<div class="transaction show">
+
+<h1>{{transaction.amount}}</h1>
+<h1>{{transaction.date}}</h1>
+<h1>{{transaction.where}}</h1>
+<h1>{{transaction.with}}</h1>
+
+<form action="/transaction/{{transaction._id}}?_method=DELETE" method="post" class="btn">
+    <input type="submit" value="delete" class="btn">
+    </form>
+<a href="/transaction/{{transaction._id}}/edit"><button>Edit</button></a>
+<a href="/transaction"><button>Back To Main</button></a>
+
+</div>
+
+    
+
+    
+</body>
+</html>

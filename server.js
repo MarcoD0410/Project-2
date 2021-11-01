@@ -1,23 +1,20 @@
 // import deps
+require("dotenv").config()
 const express = require("express")
+const methodOverride = require("method-override")
+const morgan = require("morgan")
+const TransactionRouter = require("./controllers/transaction")
+
+//create app object 
 const app = require("liquid-express-views")(express())
-const transactions = require("./models/tranaction")
 
 
-app.use(express.static("public"))
 
+//set up middleware 
+app.use(morgan("tiny"))
+app.use(methodOverride("_method"))
 app.use(express.urlencoded({extended:true}))
-
-
-
-
-
-
-
-
-
-
-
+app.use(express.static("public"))
 
 
 
@@ -26,9 +23,11 @@ app.get("/", (req, res) => {
     res.send("This App is working")
 })
 
-app.get("/transaction", (req, res) => {
-    res.render("index.liquid"), {transactions}
-})
+
+app.use("/transaction", TransactionRouter)
+
+
+
 
 
 

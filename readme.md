@@ -30,6 +30,10 @@ List your routes in a table
 
 ## Challenges
 
-- detail roadblocks and anything you did to overcome whether you did or didn't
+Biggest challenge that I couldn't get was the layout.liquid tried everything I could think of im sure it was something easy as well but I couldn't get it work
+
+The carosal was another big challenge I couldn't overcome even after watching the class recording from that day just gave me a lot of trouble 
+
+Being able to style better, styling took a lot of my time and I didnt even get to do what I had in mind because it didn't come out the way I wanted
 
 ## List of Technologies

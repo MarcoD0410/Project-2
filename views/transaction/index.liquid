@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header><h1>Transaction App</h1></header>
+    <nav> 
+        <a href="/transaction"><div>Home</div></a>
+        <a href="/transaction/new"><div>New Transaction</div></a>
+    </nav>
+    {% for transaction in transactions %}
+    <div class="transaction">
+    
+            <h1>{{transaction.date}}</h1>
+            <h2><a href="/transaction/{{transaction._id}}">{{transaction.where}}</a></h2>
+          
+      </div>
+      {% endfor %}
+    
+</body>
+</html>

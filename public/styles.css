@@ -1,0 +1,120 @@
+header h1 {
+    text-align: center;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4em;
+}
+
+.transaction {
+    width: 60%;
+    margin: 10px auto;
+    background-color: whitesmoke;
+    border: 3px solid;
+}
+
+.transaction h1, h2, a {
+    color: red;
+}
+
+.transaction.show h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+
+
+body {
+    background-image: url("https://www.investopedia.com/thmb/lqOcGlE7PI6vLMzhn5EDdO0HvYk=/1337x1003/smart/filters:no_upscale()/GettyImages-1054017850-7ef42af7b8044d7a86cfb2bff8641e1d.jpg");
+}
+
+
+button {
+    font-size: 1.3em;
+    padding: 10px;
+    background-color: purple;
+    color: whitesmoke;
+    transition: background-color .3s, color .3s;
+}
+
+button:hover, input[type="submit"].btn:hover {
+    background-color: white;
+    color: navy;
+}
+
+input[type="submit"].btn {
+    font-size: 1.2em;
+    height: 48px;
+    padding: 5px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color .3s, color .3s;
+}
+
+form.btn {
+    display: inline;
+}
+
+
+
+nav {
+    display: flex;
+    background-color: red;
+    color: white;
+    justify-content: space-around;
+    padding: 25px;
+    font-size: 2em;
+    font-weight: bolder ;
+}
+
+nav a {
+    color: white;
+}
+
+nav div {
+    transition: color .3s, background-color .3s;
+}
+
+nav div:hover {
+    color:purple;
+    background-color: white;
+}
+
+.container {
+    width: 60%;
+    min-width: 300px;
+    margin: auto;
+    text-align: center;
+    border: 5px solid ;
+    padding: 20px 0 50px;
+    background-color: rgba(245, 245, 245, 0.418);
+}
+
+input {
+    width: 20%;
+    height: 30px;
+}
+
+input[type="submit"] {
+padding: 5px;
+width: 15%;
+font-size: 15px;
+color: white;
+background-color: purple;
+border-radius: 10px;
+}
+
+
+form {
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#body {
+    background-color: whitesmoke;
+    background-image: url("https://www.investopedia.com/thmb/lqOcGlE7PI6vLMzhn5EDdO0HvYk=/1337x1003/smart/filters:no_upscale()/GettyImages-1054017850-7ef42af7b8044d7a86cfb2bff8641e1d.jpg");
+}
+
+
